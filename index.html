@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panda Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="assets\logo.png" alt="Panda Logo"/>
+    </div>
+    <div class="hamburger">
+      <img src="assets\menu-bar.png" alt="Menu"/>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Mi LED TV 4A PRO 32</h1>
+      <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      <div class="hero-price">$1289</div>
+      <button class="btn-buy">BUY NOW</button>
+    </div>
+    <div class="hero-img">
+      <img src="assets\hero-tv - Copy.png" alt="Mi LED TV 4A Pro 32"/>
+    </div>
+  </section>
+
+  <section class="categories">
+    <p class="section-title">Categories</p>
+    <div class="cat-grid">
+      <div class="cat-card watch">
+        <span class="cat-label">Watch</span>
+        <div class="cat-img"><img src="assets\category-watch - Copy.png" alt="Watch"/></div>
+      </div>
+      <div class="cat-card bag">
+        <span class="cat-label">Bag</span>
+        <div class="cat-img"><img src="assets\category-bag - Copy.png" alt="Bag"/></div>
+      </div>
+      <div class="cat-card shoes">
+        <span class="cat-label">Shoes</span>
+        <div class="cat-img"><img src="assets\category-shoe - Copy.png" alt="Shoes"/></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <p class="section-title">Shoes</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="assets\shoe-1.png" alt="Reebok Dart Men's Shoes"/>
+        <h3>Reebok Dart Men's Shoes</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product-price">$1289</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets\shoe-2.png" alt="Reebok Pump"/>
+        <h3>Reebok Pump</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product-price">$799</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets\shoe-3.png" alt="Reebok All Terrain"/>
+        <h3>Reebok All Terrain</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product-price">$699</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="products" style="padding-top:0;">
+    <p class="section-title">Backpack</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="assets\bag-1 - Copy.png" alt="Ison Backpack"/>
+        <h3>Ison Backpack</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product--price">$1289</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets\bag-2 - Copy.png" alt="Biaowang Backpack"/>
+        <h3>Biaowang Backpack</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product-price">$799</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets\bag-3 - Copy.png" alt="Dxyizu WS54 Smart"/>
+        <h3>Dxyizu WS54 Smart</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        <div class="product-price">$699</div>
+        <button class="btn-buy-dark">BUY NOW</button>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="newsletter">
+    <h2>LET'S STAY IN TOUCH</h2>
+    <p>Get updates on sales specials and more</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email"/>
+      <button>Send</button>
+    </div>
+  </div>
+
+</body>
+
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --pink:   #e91e8c;
+      --orange: #f5a623;
+      --blue:   #5c4edb;
+      --dark:   #1a1a2e;
+      --text:   #333;
+      --sub:    #888;
+      --bg:     #fff;
+      --hero-bg:#fff0f0;
+      --news-bg:#fdf5f5;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .logo img { height: 42px; object-fit: contain; }
+    .hamburger img { width: 28px; cursor: pointer; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    .hero {
+      background: var(--hero-bg);
+      margin: 24px;
+      border-radius: var(--radius);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      overflow: hidden;
+    }
+    .hero-text { flex: 1; }
+    .hero-text h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; color: var(--dark); }
+    .hero-text p  { margin-top: 12px; font-size: .88rem; color: var(--sub); line-height: 1.7; max-width: 340px; }
+    .hero-price   { margin-top: 18px; font-size: 1.8rem; font-weight: 700; color: var(--pink); }
+    .btn-buy {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 11px 28px;
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: .88rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      transition: opacity .2s;
+    }
+    .btn-buy:hover { opacity: .85; }
+    .hero-img { flex: 1; text-align: right; }
+    .hero-img img { max-width: 380px; width: 100%; object-fit: contain; }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .categories { padding: 32px 24px 0; }
+    .cat-grid {
+      display: flex;
+      gap: 16px;
+    }
+    .cat-card {
+      flex: 1;
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: transform .2s;
+    }
+    .cat-card:hover { transform: translateY(-3px); }
+    .cat-card.watch { background: var(--orange); }
+    .cat-card.bag   { background: var(--pink);   }
+    .cat-card.shoes { background: var(--blue);   }
+    .cat-label { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    .cat-img img { height: 64px; object-fit: contain; }
+
+    .products { padding: 36px 24px; }
+    .product-grid {
+      display: flex;
+      gap: 16px;
+    }
+    .product-card {
+      flex: 1;
+      border: 1.5px solid #eee;
+      border-radius: var(--radius);
+      padding: 24px 16px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow .2s;
+    }
+    .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+    .product-card img {
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 14px;
+    }
+    .product-card h3 { font-size: .95rem; font-weight: 700; }
+    .product-card p  { font-size: .78rem; color: var(--sub); margin-top: 6px; line-height: 1.6; }
+    .product-price   { font-size: 1rem; font-weight: 700; margin-top: 10px; }
+    .btn-buy-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      padding: 10px 22px;
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      transition: opacity .2s;
+    }
+    .btn-buy-dark:hover { opacity: .8; }
+    .btn-buy-dark::after { content: "→"; }
+
+    .newsletter {
+      background: var(--news-bg);
+      margin: 0 24px 40px;
+      border-radius: var(--radius);
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .newsletter h2 { font-size: 1.15rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+    .newsletter p  { font-size: .83rem; color: var(--sub); margin-top: 6px; }
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-top: 22px;
+    }
+    .newsletter-form input {
+      width: 280px;
+      padding: 12px 18px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0 0 6px;
+      font-size: .88rem;
+      outline: none;
+      font-family: inherit;
+    }
+    .newsletter-form button {
+      padding: 12px 28px;
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      font-size: .88rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: opacity .2s;
+    }
+    .newsletter-form button:hover { opacity: .85; }
+
+    
+    @media (max-width: 1200px) {
+      .hero-text h1  { font-size: 1.6rem; }
+      .hero-price    { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 992px) {
+      .cat-grid     { flex-wrap: wrap; }
+      .cat-card     { flex: 1 1 calc(50% - 8px); }
+      .product-grid { flex-direction: column; }
+      .product-card { flex-direction: row; text-align: left; align-items: flex-start; gap: 16px; }
+      .product-card img { height: 100px; margin-bottom: 0; }
+      .newsletter-form input { width: 200px; }
+    }
+
+    @media (max-width: 640px) {
+      .hero           { flex-direction: column; padding: 28px 24px; margin: 16px; text-align: center; }
+      .hero-img       { text-align: center; }
+      .hero-text p    { margin: 12px auto 0; }
+      .hero-text h1   { font-size: 1.35rem; }
+      .hero-price     { font-size: 1.3rem; }
+
+      .categories     { padding: 24px 16px 0; }
+      .cat-grid       { flex-direction: column; }
+      .cat-card       { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+      .cat-img img    { height: 56px; }
+
+      .products       { padding: 24px 16px; }
+      .product-grid   { flex-direction: column; }
+      .product-card   { flex-direction: column; align-items: center; text-align: center; }
+
+      .newsletter           { margin: 0 16px 32px; }
+      .newsletter-form      { flex-direction: column; align-items: center; gap: 10px; }
+      .newsletter-form input {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 6px;
+      }
+      .newsletter-form button {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 6px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      header { padding: 12px 16px; }
+      .hero  { margin: 12px; padding: 20px 16px; }
+      .hero-text h1 { font-size: 1.1rem; }
+      .section-title { font-size: 1.1rem; }
+    }
+  </style>
+</html>
